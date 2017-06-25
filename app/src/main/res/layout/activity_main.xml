@@ -2,11 +2,13 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.c0d3r.getsunset.getsunset.MainActivity">
 
     <EditText
+        android:background="@drawable/background"
         android:id="@+id/txtCityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,22 +22,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+
         android:id="@+id/txtSunSetResutl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="SunSet is At ...."
+        android:text="-------------"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCityName"
         app:layout_constraintHorizontal_bias="0.501" />
 
     <Button
+        android:background="@drawable/button_blue"
         android:id="@+id/btnShowResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="GetSunSet"
         android:text="Get SunSet"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="44dp"
